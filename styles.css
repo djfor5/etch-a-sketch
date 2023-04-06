@@ -1,0 +1,23 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  max-width: 600px;
+  background-color: white;
+  margin: 0 auto;
+}
+
+.tile {
+  background-color: rgb(0,0,0);
+  
+  border: 1px solid darkorange;
+  margin: 0px;
+}
+
+.trail {
+  background-color: orange;
+}
