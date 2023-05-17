@@ -1,13 +1,13 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 :root {
   --border-clr: darkorange;
   --trail-clr: orange;
   --tile-clr: rgb(0,0,0);
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 body {
@@ -16,6 +16,11 @@ body {
   max-height: 100vh;
   max-width: 600px;
   margin: 0 auto;
+}
+
+h1 {
+  padding: 0.5rem;
+  margin: 0;
 }
 
 .tile {
