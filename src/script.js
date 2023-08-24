@@ -1,3 +1,5 @@
+import "./style.css";
+
 let gridLength;
 do {
   gridLength = parseInt(prompt("Enter the grid size, N, for an N x N grid (maximum 100, otherwise defaults to 16): "), 10) || 16; // eslint-disable-line no-alert
