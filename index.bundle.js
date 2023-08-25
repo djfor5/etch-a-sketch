@@ -585,19 +585,16 @@ var __webpack_exports__ = {};
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ "./src/style.css");
 
-
 let gridLength;
 do {
   gridLength = parseInt(prompt("Enter the grid size, N, for an N x N grid (maximum 100, otherwise defaults to 16): "), 10) || 16; // eslint-disable-line no-alert
 } while (gridLength > 100);
-
 const allowToggle = false; // allows infinite toggle of div colour with click or hover over div
 // const eventType = 'mousedown' // individual clicks
 // const eventType = 'click' // individual click
 const eventType = "mouseover" || 0; // leaves a trail
 
 const container = document.querySelector("#container");
-
 for (let i = 0; i < gridLength; i++) {
   const divRow = document.createElement("div");
   divRow.style.display = "flex";
@@ -610,10 +607,9 @@ for (let i = 0; i < gridLength; i++) {
   }
   container.appendChild(divRow);
 }
-
 const divs = document.querySelectorAll("#container > div > div");
-divs.forEach((div) => {
-  div.addEventListener(eventType, (event) => {
+divs.forEach(div => {
+  div.addEventListener(eventType, event => {
     if (allowToggle) {
       div.classList.toggle("trail");
     } else {
@@ -622,9 +618,8 @@ divs.forEach((div) => {
     event.stopPropagation();
   });
 });
-
 })();
 
 /******/ })()
 ;
-//# sourceMappingURL=index.46c509c078b2ee179aa9.bundle.js.map
+//# sourceMappingURL=index.bundle.js.map
